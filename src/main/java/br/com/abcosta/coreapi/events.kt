@@ -2,22 +2,22 @@ package br.com.abcosta.coreapi
 
 import java.util.UUID
 
-class FoodCardCreatedEvent(
-    val foodCardId: UUID
+class FoodCartCreatedEvent(
+    val foodCartId: UUID
 )
 
 data class ProductSelectedEvent(
-    val foodCardId: UUID,
+    val foodCartId: UUID,
     val productId: UUID,
     val quantity: Int
 )
 
 data class ProductDeselectedEvent(
-    val foodCardId: UUID,
+    val foodCartId: UUID,
     val productId: UUID,
     val quantity: Int
 )
 
 data class OrderConfirmedEvent(
-    val foodCardId: UUID
+    val foodCartId: UUID
 )
